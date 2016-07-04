@@ -91,9 +91,6 @@ public class NDN extends JavaPlugin {
 					case 4:
 						player.sendMessage(ChatColor.WHITE + mess);
 						break;
-					case 5:
-						player.sendMessage(ChatColor.WHITE + "enolCogeL ,emoh oG");
-						break;
 					}
 				}
 				getServer().dispatchCommand(getServer().getConsoleSender(), "kick legoclone09");

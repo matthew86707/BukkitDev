@@ -13,5 +13,3 @@ commands:
   description: tells everyone your afk and teleports you to the afk room
  spawn:
   description: teleports you to spawn
- dev:
-  description: 0.0

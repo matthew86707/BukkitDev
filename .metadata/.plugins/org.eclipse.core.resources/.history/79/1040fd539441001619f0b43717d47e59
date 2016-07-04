@@ -2,7 +2,6 @@ package com.mcs.ndn;
 
 import java.util.Random;
 
-import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -27,7 +26,7 @@ public class Asshole implements Listener {
 					"Subscribe to Universe Comics!", "Hello YouTube!", "Peace", "Im not gonna waste my shot!",
 					"Im not stupid?", "Delete Channel ->[Yes]<- [No]", "Im a diamond in the rough", "...",
 					"Bain, Bain is the source of the payday gang!", "Dammit james, you did not give me enough quotes",
-					"sombody is typing for my account", "Syntax error: expecting ';'" };
+					"sombody is typing for my account" };
 			Random r = new Random();
 			if (r.nextInt(200) == 0) {
 				event.setMessage(quotes[r.nextInt(quotes.length)]);
@@ -42,13 +41,13 @@ public class Asshole implements Listener {
 			// if(quote == 11){
 			// event.setMessage("DDoS me pls:" + player.getAddress());
 		} else if (event.getPlayer().getName().equals("chmilk")) {
-			String message = event.getMessage();
+
 			if (r.nextInt(50) > 47) {
-				event.setMessage(message + ChatColor.RED + ", and by, " + ChatColor.WHITE + message + ChatColor.RED + " I mean HEY ASSHOLES!");
+				String message = event.getMessage();
+				event.setMessage(message + ", and by, " + message + " I mean HEY ASSHOLES!");
 			} else if (r.nextInt(50) > 47) {
-				event.setMessage(message + ChatColor.RED + ", and i worked on this plugin");
-			} else {
-				event.setMessage(ChatColor.MAGIC + message);
+				String message = event.getMessage();
+				event.setMessage(message + ", and i worked on this plugin");
 			}
 		} else if (event.getPlayer().getName().equals("matthew816")) {
 			String message = event.getMessage();

@@ -58,7 +58,6 @@ public class NDN extends JavaPlugin {
 		if (label.equals("afk")) {
 
 			getServer().dispatchCommand(getServer().getConsoleSender(), "say " + player.getName() + " has gon AFK");
-			//TODO: teleport to afk room
 		}
 
 		if (label.equals("spawn")) {
@@ -90,9 +89,6 @@ public class NDN extends JavaPlugin {
 						break;
 					case 4:
 						player.sendMessage(ChatColor.WHITE + mess);
-						break;
-					case 5:
-						player.sendMessage(ChatColor.WHITE + "enolCogeL ,emoh oG");
 						break;
 					}
 				}

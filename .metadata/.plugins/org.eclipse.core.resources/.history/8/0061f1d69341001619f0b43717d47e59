@@ -14,4 +14,4 @@ commands:
  spawn:
   description: teleports you to spawn
  dev:
-  description: 0.0
+  description: :)
