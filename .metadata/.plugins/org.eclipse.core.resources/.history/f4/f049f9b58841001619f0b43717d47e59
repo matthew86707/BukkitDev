@@ -1,0 +1,7 @@
+package com.mcs.ndn;
+
+import org.bukkit.event.Listener;
+
+public class AFK implements Listener{
+
+}
