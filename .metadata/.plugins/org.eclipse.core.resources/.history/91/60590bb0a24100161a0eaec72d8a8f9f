@@ -87,18 +87,6 @@ public class NDN extends JavaPlugin{
 			Player player = (Player) sender;
 			player.getWorld().playSound(player.getLocation(), Sound.RECORD_FAR, 1, 1);
 		}
-		if(label.equals("music")){
-			Player player = (Player) sender;
-			player.getWorld().playSound(player.getLocation(), Sound.RECORD_WARD, 1, 1);
-		}
-		if(label.equals("yo")){
-			Player player = (Player) sender;
-			player.getWorld().playSound(player.getLocation(), Sound.RECORD_BLOCKS, 1, 1);
-		}
-		if(label.equals("usa")){
-			Player player = (Player) sender;
-			player.getWorld().playSound(player.getLocation(), Sound.RECORD_13, 1, 1);
-		}
 		if(label.equals("pd2")){
 			Player player = (Player) sender;
 			player.getWorld().playSound(player.getLocation(), Sound.RECORD_CAT, 1, 1);

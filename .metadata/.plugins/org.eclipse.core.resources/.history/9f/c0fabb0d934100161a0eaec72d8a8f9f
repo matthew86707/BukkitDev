@@ -7,7 +7,6 @@ import org.bukkit.ChatColor;
 import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
-import org.bukkit.command.defaults.PlaySoundCommand;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.plugin.PluginManager;
@@ -83,37 +82,11 @@ public class NDN extends JavaPlugin{
 			Player player = (Player) sender;
 			player.getWorld().playSound(player.getLocation(), Sound.RECORD_MALL, 1, 1);
 		}
-		if(label.equals("sorry")){
-			Player player = (Player) sender;
-			player.getWorld().playSound(player.getLocation(), Sound.RECORD_FAR, 1, 1);
-		}
-		if(label.equals("music")){
-			Player player = (Player) sender;
-			player.getWorld().playSound(player.getLocation(), Sound.RECORD_WARD, 1, 1);
-		}
-		if(label.equals("yo")){
-			Player player = (Player) sender;
-			player.getWorld().playSound(player.getLocation(), Sound.RECORD_BLOCKS, 1, 1);
-		}
-		if(label.equals("usa")){
-			Player player = (Player) sender;
-			player.getWorld().playSound(player.getLocation(), Sound.RECORD_13, 1, 1);
-		}
 		if(label.equals("pd2")){
 			Player player = (Player) sender;
 			player.getWorld().playSound(player.getLocation(), Sound.RECORD_CAT, 1, 1);
 			player.sendMessage(ChatColor.YELLOW + "Bain:");
-			Random r = new Random();
-			int one = r.nextInt(3);
-			if(one == 0){
-			player.sendMessage(ChatColor.WHITE + "Fuck me, we needed those cooks. I'm going with chloride.");
-			}
-			if(one == 1){
-				player.sendMessage(ChatColor.WHITE + "Caustic chloride. Says it is some solid form... Wait a... Should be that hydrogen, right?");
-				}
-			if(one == 2){
-				player.sendMessage(ChatColor.WHITE + "It needs hydrogen chloride, for sure... No, no wait... Yeah, OK.");
-				}
+			player.sendMessage(ChatColor.WHITE + "Bain:");
 		}
 		return false;
 	}
