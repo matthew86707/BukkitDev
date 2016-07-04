@@ -1,0 +1,15 @@
+package com.mcs.ndn;
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.AsyncPlayerChatEvent;
+
+public class Asshole implements Listener{
+	
+	@EventHandler
+	public void onPlayerChat(AsyncPlayerChatEvent event){
+		String message = event.getMessage();
+		event.setMessage(message + ", and by, " + message + " I mean HEY ASSHOLES!");
+	}
+
+}

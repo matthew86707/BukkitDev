@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.bukkit.plugin.java.JavaPlugin"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.PluginDescriptionFile"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="org.bukkit.command.CommandSender"/>
+<fullyQualifiedTypeName name="org.bukkit.command.Command"/>
+<fullyQualifiedTypeName name="org.bukkit.ChatColor"/>
+<fullyQualifiedTypeName name="org.bukkit.event.Listener"/>
+<fullyQualifiedTypeName name="org.bukkit.event.EventHandler"/>
+<fullyQualifiedTypeName name="org.bukkit.event.player.AsyncPlayerChatEvent"/>
+<fullyQualifiedTypeName name="org.apache.logging.log4j.core.config.plugins.PluginManager"/>
+<fullyQualifiedTypeName name="org.bukkit.plugin.PluginManager"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
+</qualifiedTypeNameHistroy>

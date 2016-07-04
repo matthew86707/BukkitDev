@@ -1,0 +1,7 @@
+main: com.mcs.ndn.NDN
+version: 1.0
+name: NDN
+
+commands:
+ hello:
+  description: Lol, idk you figure out what this does

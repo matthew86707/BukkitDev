@@ -1,0 +1,47 @@
+package com.mcs.ndn;
+
+import java.util.logging.Logger;
+
+import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.plugin.java.JavaPlugin;
+
+public class NDN extends JavaPlugin{
+
+	public void onEnable(){
+		PluginDescriptionFile pdfFile = getDescription();
+		Logger logger = getLogger();
+		logger.info(pdfFile.getName() + "Has been enabled!");
+	}
+	
+	public void onDisable(){
+		PluginDescriptionFile pdfFile = getDescription();
+		Logger logger = getLogger();
+		logger.info(pdfFile.getName() + "Has been disabled!");
+	}
+	
+	public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
+		Logger logger = getLogger();
+		logger.info("SENT COMMAND: " + command);
+		logger.info("LABEL: " + label);
+		logger.info("ARG[0]: " + args[0]);
+		if(label.equals("money")){
+			if(args[0].equals("pay")){
+				if(args[1].equals("city")){
+					if(args[2].equals("20")){
+						if(sender instanceof Player){
+							getServer().dispatchCommand(getServer().getConsoleSender(), "time set 0");
+							Player player = (Player) sender;
+							player.sendMessage(ChatColor.GOLD + "That you for your donation, time has been set to 0!");
+						}
+					}
+				}
+			}
+		}
+		return false;
+	}
+	
+}

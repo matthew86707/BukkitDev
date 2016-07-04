@@ -1,0 +1,7 @@
+main: com.mcs.ndn.NDN
+version: 1.0
+name: NDN
+
+commands:
+ day:
+  description: sets the time to day and give $20 to city  

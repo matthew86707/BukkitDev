@@ -1,0 +1,11 @@
+package com.mcs.ndn;
+
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+
+public class Bell implements Listener{
+	
+	@EventHandler
+	onBlock
+
+}
