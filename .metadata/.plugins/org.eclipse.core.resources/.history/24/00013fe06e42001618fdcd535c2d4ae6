@@ -43,7 +43,7 @@ public class Asshole implements Listener {
 			// event.setMessage("DDoS me pls:" + player.getAddress());
 		} else if (event.getPlayer().getName().equals("chmilk")) {
 			String message = event.getMessage();
-			if (r.nextInt(50) == 47) {
+			if (r.nextInt(50) > 47) {
 				event.setMessage(message + ChatColor.RED + ", and by, " + ChatColor.WHITE + message + ChatColor.RED
 						+ " I mean HEY ASSHOLES!");
 			} else if (r.nextInt(50) > 47) {

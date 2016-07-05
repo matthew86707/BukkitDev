@@ -1,0 +1,11 @@
+main: com.mcs.ndn.NDN
+version: 1.0
+name: NDN
+
+commands:
+ day:
+  description: sets the time to day and gives $20 to city  
+ sun:
+  description: sets the weather to sunny and gives $8 to city
+ lego:
+  description: go home lego clone

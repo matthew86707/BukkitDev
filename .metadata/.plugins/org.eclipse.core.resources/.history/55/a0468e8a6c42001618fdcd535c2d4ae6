@@ -64,16 +64,9 @@ public class NDN extends JavaPlugin {
 		}
 
 		if (label.equals("spawn")) {
-			int xDisplacement = Math.abs(player.getLocation().getBlockX()) - 182;
-			int zDisplacement = Math.abs(player.getLocation().getBlockZ()) - 294;
-			if (xDisplacement > 100 && zDisplacement > 100) {
-				int cost = (xDisplacement+zDisplacement)/75;
-				getServer().dispatchCommand(getServer().getConsoleSender(), "money take " + player.getName()  + " " + cost);
-				getServer().dispatchCommand(getServer().getConsoleSender(), "money give city " + cost);
-				player.sendMessage(ChatColor.RED + "-$" + cost);
-				player.sendMessage(ChatColor.GOLD + "You have been teleported to spawn");
+			if (player.getLocation().getBlockX()-182 > 100 && player.getLocation().getBlockZ()-294 > 100) {
 				
-			
+			}
 			getServer().dispatchCommand(getServer().getConsoleSender(), "tp " + player.getName() + " 182, 70, 294");
 		}
 		if (label.equals("dev") && (player.getName().equals("chmilk") || player.getName().equals("matthew816"))) {
@@ -146,8 +139,7 @@ public class NDN extends JavaPlugin {
 				player.sendMessage(ChatColor.WHITE + "It needs hydrogen chloride, for sure... No, no wait... Yeah, OK.");
 				}
 		}
-		}
 		return false;
 	}
-	
+
 }

@@ -67,7 +67,7 @@ public class NDN extends JavaPlugin {
 			int xDisplacement = Math.abs(player.getLocation().getBlockX()) - 182;
 			int zDisplacement = Math.abs(player.getLocation().getBlockZ()) - 294;
 			if (xDisplacement > 100 && zDisplacement > 100) {
-				int cost = (xDisplacement+zDisplacement)/75;
+				int cost = (xDisplacement+zDisplacement)/10;
 				getServer().dispatchCommand(getServer().getConsoleSender(), "money take " + player.getName()  + " " + cost);
 				getServer().dispatchCommand(getServer().getConsoleSender(), "money give city " + cost);
 				player.sendMessage(ChatColor.RED + "-$" + cost);
@@ -146,8 +146,7 @@ public class NDN extends JavaPlugin {
 				player.sendMessage(ChatColor.WHITE + "It needs hydrogen chloride, for sure... No, no wait... Yeah, OK.");
 				}
 		}
-		}
 		return false;
 	}
-	
+	}
 }

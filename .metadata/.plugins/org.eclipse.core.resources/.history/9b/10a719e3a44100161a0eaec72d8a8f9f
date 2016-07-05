@@ -9,14 +9,6 @@ commands:
   description: sets the weather to sunny and gives $8 to city
  lego:
   description: go home lego clone
-<<<<<<< HEAD
- afk:
-  description: tells everyone your afk and teleports you to the afk room
- spawn:
-  description: teleports you to spawn
- dev:
-  description: 0.0
-=======
  pd2:
   description: lol
  startsax:
@@ -27,6 +19,5 @@ commands:
   description: Im totally totally totally totally sorry for that, my bad
  music:
   description: Im totally totally totally totally sorry for that, my bad
- usa:
+ yo:
   description: Im totally totally totally totally sorry for that, my bad
->>>>>>> origin/master
