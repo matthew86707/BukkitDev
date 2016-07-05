@@ -13,4 +13,5 @@
 <fullyQualifiedTypeName name="org.bukkit.plugin.PluginManager"/>
 <fullyQualifiedTypeName name="java.util.Random"/>
 <fullyQualifiedTypeName name="org.bukkit.entity.Player"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
 </qualifiedTypeNameHistroy>
